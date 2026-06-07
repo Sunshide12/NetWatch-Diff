@@ -1,0 +1,7 @@
+services:
+  netwatch:
+    build: .
+    container_name: netwatch-diff
+    restart: unless-stopped
+    env_file:
+      - .env
